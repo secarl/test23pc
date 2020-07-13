@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Manejo de Errores</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<div layout:fragment="content">
+		<div class="container main-content mt-3">
+			<br /> <br />
+			<h2 class="mt-2">Ups!!!</h2>
+			<ul>
+				<li class="list-group-item list-group-item-danger"><h3 th:text="${error}">Status</h3></li>
+				<li class="list-group-item " th:text="'Status code: ' + ${status}"></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>

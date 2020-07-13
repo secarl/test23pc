@@ -11,6 +11,7 @@
 	<groupId>com.mitocode</groupId>
 	<artifactId>demoWeb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
 	<name>demoWeb</name>
 	<description>Demo project for Spring Boot</description>
 
@@ -59,7 +60,11 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>2.3.0.RELEASE</version>
+			</plugin>
 		</plugins>
 	</build>
-
 </project>

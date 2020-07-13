@@ -1,0 +1,6 @@
+com/mitocode/model/Persona.class
+com/mitocode/DemoWebApplication.class
+com/mitocode/controller/DemoController.class
+com/mitocode/repository/IPersonaRepo.class
+com/mitocode/restservice/RestDemoController.class
+com/mitocode/repository/PersonaRepoImpl.class
