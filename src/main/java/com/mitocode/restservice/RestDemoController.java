@@ -32,11 +32,19 @@ public class RestDemoController {
 		return repo.getOne(id);
 	}
 	
-	@PostMapping
-	public void insertar(@RequestBody Persona per) {
-		repo.save(per);
+	//@PostMapping
+	//public void insertar(@RequestBody Persona per) {
+	//	repo.save(per);
+//	}
+
+@PostMapping
+public void insertar(@RequestBody Persona per) throws Exception {
+	if (per.getNombre() == null || per.getNombre().isEmpty()) {
+		throw new Exception("Error en el nombre");
 	}
-	
+	repo.save(per);
+}
+
 	@PutMapping
 	public void actualizar(@RequestBody Persona per) {
 		repo.save(per);
