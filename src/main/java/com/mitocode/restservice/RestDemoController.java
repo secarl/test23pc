@@ -45,15 +45,15 @@ public class RestDemoController {
 		return per;
 	}
 
-	@GetMapping(value = "/nacionalidad/{nac}")
-	public Optional<Persona> buscarNacionalidad(@PathVariable("nac") String nac) throws NotFoundException {
-		Optional<Persona> per;
-		per = repo.findByid(id);
-		if (per.get().getNacionalidad() == null || per.get().getNacionalidad().isEmpty()) {
-			throw new NotFoundException ("La nacionalidad esta Vacia");
-		}
-		return per;
-	}
+//	@GetMapping(value = "/nacionalidad/{nac}")
+//	public Optional<Persona> buscarNacionalidad(@PathVariable("nac") String nac) throws NotFoundException {
+//		Optional<Persona> per;
+//		per = repo.findByid(id);
+//		if (per.get().getNacionalidad() == null || per.get().getNacionalidad().isEmpty()) {
+//			throw new NotFoundException ("La nacionalidad esta Vacia");
+//		}
+//		return per;
+//	}
 	//@PostMapping
 	//public void insertar(@RequestBody Persona per) {
 	//	repo.save(per);
