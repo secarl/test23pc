@@ -12,6 +12,9 @@ public class Persona {
 	private int id;
 	@Column(name="nombre", length=50)
 	private String nombre;
+
+	@Column(name="nacionalidad", length=50)
+	private String nacionalidad;
 	
 	public int getIdPersona() {
 		return id;
@@ -29,6 +32,12 @@ public class Persona {
 		this.nombre = nombre;
 	}	
 	
-		
+	public String getNacionalidad() {
+		return nacionalidad;
+	}
+	
+	public void setNacionalidad(String nacionalidad) {
+		this.nacionalidad = nacionalidad;
+	}		
 	
 }
